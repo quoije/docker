@@ -1,5 +1,5 @@
 FROM alpine/git:latest
-MAINTAINER mathieumoran1@gmail.com
+LABEL email="mathieumoran1@gmail.com"
 RUN apk fix
 RUN apk add --update nodejs npm
 RUN npm install pm2 -g
