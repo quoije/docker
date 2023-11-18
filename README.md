@@ -8,5 +8,8 @@ https://github.com/chriscarreau/resistance-online
 
 ---
 
-#### build image
+### build image
 ` docker build -t resistance-online:latest . `
+
+##### multi platforms (linux/arm64,linux/amd64)
+` docker buildx build -t resistance-online:latest . --platform=linux/arm64,linux/amd64 `
